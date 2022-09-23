@@ -1,14 +1,12 @@
-const inputTextRef = document.querySelector('#validation-input');
+const inputText = document.querySelector('#validation-input');
 
-const invalidRef = inputTextRef.addEventListener('blur', inputTextRef);
+const invalid = inputText.addEventListener('blur', inputText);
 
-const validRef = inputTextRef.addEventListener('focus', inputTextRef);
+const valid = inputText.addEventListener('focus', inputText);
 
-inputTextRef.addEventListener('input', () => {
-    if (inputTextRef.value.length < inputTextRef.dataset.length) {
-        return inputTextRef.classList.add('invalid')
+inputText.addEventListener('input', () => {
+    if (inputText.value.length < inputText.dataset.length) {
+        return inputText.classList.add('invalid');
     }
-    return inputTextRef.classList.replace('invalid', 'valid')
-})
-
-
+    return inputText.classList.replace('invalid', 'valid');
+});

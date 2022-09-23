@@ -1,7 +1,7 @@
-const inputRef = document.querySelector('#name-input');
+const input = document.querySelector('#name-input');
 
-const outputRef = document.querySelector('#name-output');
+const output = document.querySelector('#name-output');
 
-inputRef.addEventListener('input', (event) => {
-    outputRef.textContent = event.currentTarget.value;
-})
+input.addEventListener('input', event => {
+    output.textContent = event.currentTarget.value;
+});

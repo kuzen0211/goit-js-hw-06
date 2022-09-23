@@ -1,13 +1,11 @@
-const mainEl = document.querySelector('#categories');
+const categoryEL = document.querySelector('#categories');
 
-const categoryEl = document.querySelectorAll('.item');
-console.log(`Number of categories: ${categoryEl.length}`);
+const listItem = document.querySelectorAll('.item');
+console.log(`Number of categories: ${listItem.length}`);
 
-const titleEl = document.querySelectorAll('h2')
-for (const title of titleEl) {
+const titleByItem = document.querySelectorAll('h2');
+for (const title of titleByItem) {
     console.log(`Category: ${title.textContent}`);
 
-    console.log(`Elements:${title.nextElementSibling.children.length}`)
+    console.log(`Elements:${title.nextElementSibling.children.length}`);
 }
-
-

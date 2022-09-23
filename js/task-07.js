@@ -1,10 +1,6 @@
-const inputSliderRef = document.querySelector("#font-size-control");
-console.log(inputSliderRef);
+const inputSlider = document.querySelector('#font-size-control');
+const textFontSize = document.querySelector('#text');
 
-const textFontSizeRef = document.querySelector('#text');
-console.log(textFontSizeRef);
-
-inputSliderRef.addEventListener('input', () => {
-    textFontSizeRef.style.fontSize = `${inputSliderRef.value}px`
-})
-
+inputSlider.addEventListener('input', () => {
+    textFontSize.style.fontSize = `${inputSlider.value}px`;
+});
