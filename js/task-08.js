@@ -9,14 +9,17 @@ function onFormSubmit(event) {
     } = event.currentTarget;
 
     const formData = new FormData(event.currentTarget);
-    console.log(formData);
 
     if (email.value === '' || password.value === '') {
         return alert('Please fill in all the fields!');
     }
 
-    formData.forEach((name, value) => {
-        console.log(value, name);
+    const obj = {};
+
+    formData.forEach((value, key) => {
+        obj[key] = value;
     });
+
+    console.log(obj);
     event.currentTarget.reset();
 }

@@ -15,7 +15,7 @@ const images = [
 
 const galleryImages = document.querySelector('.gallery');
 
-const makeGallery = images.map(item => {
+const galleryList = images.map(item => {
     const photoItem = document.createElement('li');
     photoItem.insertAdjacentHTML(
         'afterbegin',
@@ -25,6 +25,6 @@ const makeGallery = images.map(item => {
     return photoItem;
 });
 
-galleryImages.append(...makeGallery);
+galleryImages.append(...galleryList);
 
 console.log(galleryImages);
